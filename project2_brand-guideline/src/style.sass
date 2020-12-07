@@ -1,0 +1,288 @@
+$color_white: #F6F6F6
+$color_yellow: #ffb336
+$color_grey: #333
+$color_blue: #27232F
+
+$font_base_size: 10px
+
+$max_content_width: 768px
+
+$button_border_width: 1px
+
+*
+  // border: solid 1px black
+  position: relative
+
+@mixin size($w,$h)
+  height: $h
+  width: $w
+
+html,body
+  padding: 0
+  margin: 0
+
+.header
+  height: 300px
+  background-color: $color_white
+  
+  & .icon
+    width: 250px
+    position: absolute
+    left: 50%
+    right: 50%
+    transform: translateX(-50%)translateY(10%)
+    
+.maxwidth
+  max-width: $max_content_width
+  margin-left: auto
+  margin-right: auto
+    
+.content
+  font-family: Balsamiq Sans,  微軟正黑體
+  padding: 50px
+  
+  & h5
+    margin-top: 10px
+    
+  & h1
+    font-size: $font_base_size*4
+  
+  & h1.small_english 
+    font-size: $font_base_size*2.4
+    
+  & h2
+    font-size: $font_base_size*3
+  
+  & h2.small_english
+    font-size: $font_base_size*1.6
+    
+  & h3
+    font-size: $font_base_size*2
+    
+  & h3.small_english
+    font-size: $font_base_size*1.2
+    
+  & .titlehr
+    width: 100px
+    border-bottom: 5px solid 
+    border-radius: 5px
+    border-color: $color_yellow
+  
+  & .small_english
+    letter-spacing: 1px
+    margin-top: -15px
+    
+  & .button
+    padding: 5px 25px
+    display: inline-block
+    border: solid $button_border_width 
+    margin-right: 6px
+    letter-spacing: 2px
+    font-size: $font_base_size*1.5
+    font-weight: bold
+    
+  & .button_grey
+    background-color: $color_grey
+    color: $color_white
+    font-weight: 500
+    
+  & .button_blue
+    background-color: $color_blue
+    color: $color_white
+    font-weight: 500
+    
+  & .button_yellow
+    background-color: $color_yellow
+    color: $color_grey
+    // font-weight: 500
+    
+  & .colorchip
+    display: inline-block
+    margin-right: 30px
+    
+  & .color_tag,.color_block
+    display: inline-block
+    vertical-align: middle
+    
+  & .color_block
+    +size(30px,30px)
+    border: solid 2px 
+    
+  & .color_tag
+    width: 80px
+    // margin-right: 5px
+    
+  & .color_block_white
+    background-color: $color_white
+  & .color_block_yellow
+    background-color: $color_yellow
+  & .color_block_grey
+    background-color: $color_grey
+  & .color_block_blue
+    background-color: $color_blue
+    
+.content.content_blue
+  background-color: $color_blue
+  color: $color_white
+  font-family: Balsamiq Sans,  微軟正黑體
+  padding: 50px
+  
+  & h5
+    margin-top: 10px
+    
+  & h1
+    font-size: $font_base_size*4
+  
+  & h1.small_english 
+    font-size: $font_base_size*2.4
+    
+  & h2
+    font-size: $font_base_size*3
+  
+  & h2.small_english
+    font-size: $font_base_size*1.6
+    
+  & h3
+    font-size: $font_base_size*2
+    
+  & h3.small_english
+    font-size: $font_base_size*1.2
+    
+  & .titlehr
+    width: 100px
+    border-bottom: 5px solid 
+    border-radius: 5px
+    border-color: $color_yellow
+  
+  & .small_english
+    letter-spacing: 1px
+    margin-top: -15px
+    color: $color_yellow
+    
+  & .button
+    padding: 5px 25px
+    display: inline-block
+    border: solid $button_border_width $color_white
+    margin-right: 6px
+    letter-spacing: 2px
+    font-size: $font_base_size*1.5
+    font-weight: bold
+    
+  & .button_grey
+    background-color: $color_grey
+    color: $color_white
+    font-weight: 500
+    
+  & .button_yellow
+    background-color: $color_yellow
+    color: $color_grey
+    // font-weight: 500
+    
+  & .colorchip
+    display: inline-block
+    margin-right: 30px
+    
+  & .color_tag,.color_block
+    display: inline-block
+    vertical-align: middle
+    
+  & .color_block
+    +size(30px,30px)
+    border: solid 2px 
+    
+  & .color_tag
+    width: 80px
+    margin-right: 5px
+    
+  & .color_block_white
+    background-color: $color_white
+  & .color_block_yellow
+    background-color: $color_yellow
+  & .color_block_grey
+    background-color: $color_grey
+  & .color_block_blue
+    background-color: $color_blue
+    
+.content.content_grey
+  background-color: $color_grey
+  color: $color_white
+  font-family: Balsamiq Sans,  微軟正黑體
+  padding: 50px
+  
+  & h5
+    margin-top: 10px
+    
+  & h1
+    font-size: $font_base_size*4
+  
+  & h1.small_english 
+    font-size: $font_base_size*2.4
+    
+  & h2
+    font-size: $font_base_size*3
+  
+  & h2.small_english
+    font-size: $font_base_size*1.6
+    
+  & h3
+    font-size: $font_base_size*2
+    
+  & h3.small_english
+    font-size: $font_base_size*1.2
+    
+  & .titlehr
+    width: 100px
+    border-bottom: 5px solid 
+    border-radius: 5px
+    border-color: $color_yellow
+  
+  & .small_english
+    letter-spacing: 1px
+    margin-top: -15px
+    color: $color_yellow
+    
+  & .button
+    padding: 5px 25px
+    display: inline-block
+    border: solid $button_border_width $color_white
+    margin-right: 6px
+    letter-spacing: 2px
+    font-size: $font_base_size*1.5
+    font-weight: bold
+    
+  & .button_grey
+    background-color: $color_grey
+    color: $color_white
+    font-weight: 500
+    
+  & .button_yellow
+    background-color: $color_yellow
+    color: $color_grey
+    // font-weight: 500
+    
+  & .colorchip
+    display: inline-block
+    margin-right: 30px
+    
+  & .color_tag,.color_block
+    display: inline-block
+    vertical-align: middle
+    
+  & .color_block
+    +size(30px,30px)
+    border: solid 2px 
+    
+  & .color_tag
+    width: 80px
+    // margin-right: 5px
+    
+  & .color_block_white
+    background-color: $color_white
+  & .color_block_yellow
+    background-color: $color_yellow
+  & .color_block_grey
+    background-color: $color_grey
+  & .color_block_blue
+    background-color: $color_blue
+      
+ 
