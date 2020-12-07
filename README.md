@@ -1,6 +1,7 @@
 # project02-style-guideline
-The second project i made and used 
 A Pen created on CodePen.io. Original URL: https://codepen.io/chinghsuan/pen/vYNjpvP
+
+The second project i made and used 
 
 1. html(pug)
 2. css(sass)
